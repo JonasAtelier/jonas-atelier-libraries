@@ -28,7 +28,8 @@ Jonas Atelier
 │   │   └── esp32-ps-controller — PS4/PS5 controller input 🧪
 │   │
 │   ├── Communications
-│   │   └── esp32-sn65hvd230-can — CAN transceiver driver 🧪
+│   │   ├── esp32-sn65hvd230-can — CAN transceiver driver 🧪
+│   │   └── esp32-dw1000-uwb — DW1000 UWB ranging 🧪
 │   │
 │   ├── Camera
 │   │   └── Coming soon 🧭
