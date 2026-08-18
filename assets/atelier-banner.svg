@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Jonas Atelier embedded library workshop</title>
+  <desc id="desc">Two slowly rotating gears connected by animated circuit traces beside the Jonas Atelier title.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d2238"/>
+      <stop offset="1" stop-color="#102f34"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#70e1b2"/>
+      <stop offset="1" stop-color="#f2bd68"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .gear-slow { transform-origin: 176px 162px; animation: spin 16s linear infinite; }
+      .gear-fast { transform-origin: 292px 112px; animation: reverse-spin 11s linear infinite; }
+      .trace { stroke-dasharray: 12 10; animation: travel 3s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes reverse-spin { to { transform: rotate(-360deg); } }
+      @keyframes travel { to { stroke-dashoffset: -44; } }
+      @media (prefers-reduced-motion: reduce) {
+        .gear-slow, .gear-fast, .trace { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="28" fill="url(#background)"/>
+  <path d="M28 70H122L150 98H350L388 136H448" fill="none" stroke="#51c99c" stroke-width="3" opacity=".55" class="trace"/>
+  <path d="M40 258H104L132 230H338L374 194H472" fill="none" stroke="#f2bd68" stroke-width="3" opacity=".45" class="trace"/>
+  <circle cx="28" cy="70" r="5" fill="#70e1b2"/>
+  <circle cx="40" cy="258" r="5" fill="#f2bd68"/>
+  <circle cx="448" cy="136" r="5" fill="#70e1b2"/>
+  <circle cx="472" cy="194" r="5" fill="#f2bd68"/>
+
+  <g class="gear-slow" fill="none" stroke="url(#accent)" stroke-width="12" filter="url(#glow)">
+    <circle cx="176" cy="162" r="66" stroke-dasharray="28 13"/>
+    <circle cx="176" cy="162" r="34" stroke-width="8"/>
+    <path d="M176 128V196M142 162H210" stroke-width="8"/>
+  </g>
+  <g class="gear-fast" fill="none" stroke="#70e1b2" stroke-width="9" opacity=".9">
+    <circle cx="292" cy="112" r="42" stroke-dasharray="18 10"/>
+    <circle cx="292" cy="112" r="18" stroke-width="6"/>
+    <path d="M292 94V130M274 112H310" stroke-width="5"/>
+  </g>
+
+  <text x="520" y="137" fill="#f6f1e8" font-family="system-ui, sans-serif" font-size="54" font-weight="750" letter-spacing="5">JONAS ATELIER</text>
+  <text x="523" y="187" fill="#9edbc4" font-family="ui-monospace, monospace" font-size="24" letter-spacing="2">EMBEDDED LIBRARY WORKSHOP</text>
+  <path d="M523 216H1060" stroke="#f2bd68" stroke-width="3" opacity=".65"/>
+  <circle cx="1080" cy="216" r="6" fill="#f2bd68"/>
+</svg>
