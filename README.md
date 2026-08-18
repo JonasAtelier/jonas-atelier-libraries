@@ -50,7 +50,9 @@ Jonas Atelier
 │
 ├── 🧰 General
 │   └── Control &amp; Algorithms
-│       └── upid — Portable PID control 🧪
+│       ├── upid — Portable PID control 🧪
+│       ├── fsm — Finite state machines 🧪
+│       └── kin — Forward/inverse kinematics 🧪
 │
 └── 🛠️ Misc
     ├── Robomaster_controller — RoboMaster controller 🚧
