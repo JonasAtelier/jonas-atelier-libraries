@@ -21,7 +21,11 @@ Jonas Atelier
 │   │   └── esp32-c620-control — C620 motor control 🧪
 │   │
 │   ├── Sensors
-│   │   └── esp32-bmi088-imu — BMI088 IMU interface 🧪
+│   │   ├── esp32-bmi088-imu — BMI088 IMU interface 🧪
+│   │   └── esp32-ina2xx-sensor — INA2xx power monitor 🧪
+│   │
+│   ├── Input &amp; Controllers
+│   │   └── esp32-ps-controller — PS4/PS5 controller input 🧪
 │   │
 │   ├── Communications
 │   │   └── esp32-sn65hvd230-can — CAN transceiver driver 🧪
