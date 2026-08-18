@@ -31,13 +31,8 @@ Jonas Atelier
 │   │   ├── esp32-sn65hvd230-can — CAN transceiver driver 🧪
 │   │   └── esp32-dw1000-uwb — DW1000 UWB ranging 🧪
 │   │
-│   ├── Camera
-│   │   └── Coming soon 🧭
-│   │
-│   └── Algorithms &amp; Filters
-│       ├── esp32-kalman-filter — Scalar Kalman filter 🧪
-│       ├── esp32-complementary-filter — Complementary filter 🧪
-│       └── esp32-particle-filter — Particle filter 🧪
+│   └── Camera
+│       └── Coming soon 🧭
 │
 ├── 🔷 STM32
 │   └── Coming soon 🧭
@@ -49,10 +44,16 @@ Jonas Atelier
 │   └── Coming soon 🧭
 │
 ├── 🧰 General
-│   └── Control &amp; Algorithms
-│       ├── upid — Portable PID control 🧪
-│       ├── fsm — Finite state machines 🧪
-│       └── kin — Forward/inverse kinematics 🧪
+│   ├── Control &amp; Algorithms
+│   │   ├── upid — Portable PID control 🧪
+│   │   ├── fsm — Finite state machines 🧪
+│   │   ├── kin — Forward/inverse kinematics 🧪
+│   │   └── imp — Impedance &amp; admittance control 🧪
+│   │
+│   └── Filters
+│       ├── f_kalman — Scalar Kalman filter 🧪
+│       ├── f_complementary — Complementary filter 🧪
+│       └── f_particle — Particle filter 🧪
 │
 └── 🛠️ Misc
     ├── Robomaster_controller — RoboMaster controller 🚧
