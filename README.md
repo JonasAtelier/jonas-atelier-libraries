@@ -22,7 +22,8 @@ Jonas Atelier
 │   │
 │   ├── Sensors
 │   │   ├── esp32-bmi088-imu — BMI088 IMU interface 🧪
-│   │   └── esp32-ina2xx-sensor — INA2xx power monitor 🧪
+│   │   ├── esp32-ina2xx-sensor — INA2xx power monitor 🧪
+│   │   └── esp32-as5600-encoder — AS5600 magnetic encoder 🚧
 │   │
 │   ├── Input &amp; Controllers
 │   │   └── esp32-ps-controller — PS4/PS5 controller input 🧪
