@@ -75,7 +75,8 @@ Jonas Atelier
 │   └── Filters
 │       ├── f_kalman        — Scalar Kalman filter  🧪
 │       ├── f_complementary — Complementary filter  🧪
-│       └── f_particle      — Particle filter       🧪
+│       ├── f_particle      — Particle filter       🧪
+│       └── f_hampel        — Hampel filtering      🧭
 │
 └── 🛠️ Misc
     ├── 🦅 Hawk    — Drone           🧭
