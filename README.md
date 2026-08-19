@@ -26,7 +26,8 @@ Jonas Atelier
 │   │   └── esp32-as5600-encoder — AS5600 magnetic encoder 🚧
 │   │
 │   ├── Input &amp; Controllers
-│   │   └── esp32-ps-controller — PS4/PS5 controller input 🧪
+│   │   ├── esp32-ps-controller — PS4/PS5 controller input 🧪
+│   │   └── esp32-mcp23-expander — MCP23017 I/O expander 🚧
 │   │
 │   ├── Communications
 │   │   ├── esp32-sn65hvd230-can — CAN transceiver driver 🧪
