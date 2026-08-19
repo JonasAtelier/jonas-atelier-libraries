@@ -64,13 +64,15 @@ Jonas Atelier
 │
 ├── 🐧 Linux
 │   ├── Drivers
-│   │   └── Coming soon 🧭
+│   │   └── nv-ps-controller — PS4/PS5 controller input  🧭
 │   │
 │   ├── ROS2
-│   │   └── Coming soon 🧭
+│   │   └── rs-d455-camera — RealSense D455 camera  🧭
 │   │
 │   └── Communication
 │       └── Robust — ROS2-style C framework  🚧
+│
+│   Prefix key: rs- = ROS2 · nv- = NVIDIA Jetson Linux · rasp- = Raspberry Pi
 │
 ├── 🧰 General
 │   ├── Control &amp; Algorithms
