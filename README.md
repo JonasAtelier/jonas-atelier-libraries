@@ -64,7 +64,7 @@ Jonas Atelier
 │
 ├── 🐧 Linux
 │   ├── Drivers
-│   │   └── nv-ps-controller — PS4/PS5 controller input  🧭
+│   │   └── nv-ps-controller — PS4/PS5 controller input  🚧
 │   │
 │   ├── ROS2
 │   │   └── rs-d455-camera — RealSense D455 camera  🧭
