@@ -56,7 +56,7 @@ Jonas Atelier
 │
 ├── 🧰 General
 │   ├── Control &amp; Algorithms
-│   │   ├── <a href="https://github.com/JonasAtelier/upid">upid</a> — Portable PID control           ✅
+│   │   ├── upid — Portable PID control  ✅  <a href="https://github.com/JonasAtelier/upid">🔗 click me</a>
 │   │   ├── fsm  — Finite state machines           🧪
 │   │   ├── kin  — Forward/inverse kinematics      🧪
 │   │   └── imp  — Impedance &amp; admittance control  🧪
