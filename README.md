@@ -21,17 +21,17 @@ Jonas Atelier
 │   │   └── esp32-c620-control — C620 motor control 🧪
 │   │
 │   ├── Sensors
-│   │   ├── esp32-bmi088-imu — BMI088 IMU interface 🧪
-│   │   ├── esp32-ina2xx-sensor — INA2xx power monitor 🧪
-│   │   └── esp32-as5600-encoder — AS5600 magnetic encoder 🚧
+│   │   ├── esp32-bmi088-imu     — BMI088 IMU interface     🧪
+│   │   ├── esp32-ina2xx-sensor  — INA2xx power monitor     🧪
+│   │   └── esp32-as5600-encoder — AS5600 magnetic encoder  🚧
 │   │
 │   ├── Input &amp; Controllers
-│   │   ├── esp32-ps-controller — PS4/PS5 controller input 🧪
-│   │   └── esp32-mcp23-expander — MCP23017 I/O expander 🚧
+│   │   ├── esp32-ps-controller  — PS4/PS5 controller input  🧪
+│   │   └── esp32-mcp23-expander — MCP23017 I/O expander     🚧
 │   │
 │   ├── Communications
-│   │   ├── esp32-sn65hvd230-can — CAN transceiver driver 🧪
-│   │   └── esp32-dw1000-uwb — DW1000 UWB ranging 🧪
+│   │   ├── esp32-sn65hvd230-can — CAN transceiver driver  🧪
+│   │   └── esp32-dw1000-uwb     — DW1000 UWB ranging      🧪
 │   │
 │   └── Camera
 │       └── Coming soon 🧭
@@ -47,19 +47,23 @@ Jonas Atelier
 │
 ├── 🧰 General
 │   ├── Control &amp; Algorithms
-│   │   ├── <a href="https://github.com/JonasAtelier/upid">upid</a> — Portable PID control ✅
-│   │   ├── fsm — Finite state machines 🧪
-│   │   ├── kin — Forward/inverse kinematics 🧪
-│   │   └── imp — Impedance &amp; admittance control 🧪
+│   │   ├── <a href="https://github.com/JonasAtelier/upid">upid</a> — Portable PID control           ✅
+│   │   ├── fsm  — Finite state machines           🧪
+│   │   ├── kin  — Forward/inverse kinematics      🧪
+│   │   └── imp  — Impedance &amp; admittance control  🧪
 │   │
 │   └── Filters
-│       ├── f_kalman — Scalar Kalman filter 🧪
-│       ├── f_complementary — Complementary filter 🧪
-│       └── f_particle — Particle filter 🧪
+│       ├── f_kalman        — Scalar Kalman filter  🧪
+│       ├── f_complementary — Complementary filter  🧪
+│       └── f_particle      — Particle filter       🧪
 │
 └── 🛠️ Misc
-    ├── Robomaster_controller — RoboMaster controller 🚧
-    └── Dingo — Hardware project 🚧
+    ├── 🦅 Hawk    — Drone           🧭
+    ├── 🐕 Dingo   — Robotic dog     🧭
+    ├── 🕷️ Arachne — Spider robot    🧭
+    ├── 🚚 Navis   — AGV             🧭
+    ├── 🤖 Helios  — Humanoid robot  🧭
+    └── 🦾 Jarvis  — Robotic arm     🧭
 </pre>
 
 <p align="center">
