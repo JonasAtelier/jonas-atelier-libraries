@@ -50,7 +50,7 @@ Jonas Atelier
 │   │   └── esp-tca9548a-mux     — TCA9548A I2C multiplexer    🧭
 │   │
 │   ├── Communications
-│   │   ├── esp-sn65hvd230-can   — CAN transceiver driver  🧪
+│   │   ├── esp-sn65hvd230-can   — CAN transceiver driver  ✅  <a href="https://github.com/JonasAtelier/esp-sn65hvd230-can">🔗 GitHub</a>
 │   │   └── esp-dw1000-uwb       — DW1000 UWB ranging      🧪
 │   │
 │   └── Camera
