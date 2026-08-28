@@ -30,6 +30,9 @@ Jonas Atelier
 │   │   │   ├── esp-bno085-imu   — BNO085 IMU interface    🧭
 │   │   │   └── esp-icm42688-imu — ICM-42688 IMU interface 🧭
 │   │   │
+│   │   ├── Magnetic Field
+│   │   │   └── esp-qmc5883l-mag — QMC5883L magnetometer 🧪
+│   │   │
 │   │   ├── Distance &amp; Ranging
 │   │   │   ├── esp-ld06-lidar      — LD06 LiDAR interface    🧭
 │   │   │   ├── esp-tfmini-lidar    — TFmini LiDAR interface  🧭
@@ -41,6 +44,12 @@ Jonas Atelier
 │   │   ├── Encoders
 │   │   │   ├── esp-as5600-encoder     — AS5600 magnetic encoder   🚧
 │   │   │   └── esp-as5048a-encoder    — AS5048A magnetic encoder  🧭
+│   │   │
+│   │   ├── Pressure &amp; Altitude
+│   │   │   └── esp-dps310-baro — DPS310 barometer 🧪
+│   │   │
+│   │   ├── Force &amp; Load
+│   │   │   └── esp-hx711-loadcell — HX711 load cell amplifier 🧪
 │   │   │
 │   │   └── Power Monitoring
 │   │       └── esp-ina2xx-sensor   — INA2xx power monitor  🧪
