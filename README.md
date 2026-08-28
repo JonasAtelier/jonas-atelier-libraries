@@ -18,8 +18,9 @@
 Jonas Atelier
 ├── ⚡ ESP32 / ESP-IDF
 │   ├── Actuators
-│   │   ├── esp-c620-control    — C620 motor control  🧪
-│   │   └── esp-pca9685-pwm     — PCA9685 PWM driver  🧭
+│   │   ├── esp-c620-control    — C620 motor control      🧪
+│   │   ├── esp-tmc5240-stepper — TMC5240 stepper driver  🧪
+│   │   └── esp-pca9685-pwm     — PCA9685 PWM driver      🧭
 │   │
 │   ├── Sensors
 │   │   ├── Motion &amp; Orientation
