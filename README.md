@@ -24,9 +24,10 @@ Jonas Atelier
 │   │
 │   ├── Sensors
 │   │   ├── Motion &amp; Orientation
-│   │   │   ├── esp-bmi088-imu      — BMI088 IMU interface    🧪
-│   │   │   ├── esp-bno085-imu      — BNO085 IMU interface    🧭
-│   │   │   └── esp-icm42688-imu    — ICM-42688 IMU interface 🧭
+│   │   │   ├── esp-bmi088-imu   — BMI088 IMU interface    🧪
+│   │   │   ├── esp-icm45686-imu — ICM-45686 IMU interface 🧪
+│   │   │   ├── esp-bno085-imu   — BNO085 IMU interface    🧭
+│   │   │   └── esp-icm42688-imu — ICM-42688 IMU interface 🧭
 │   │   │
 │   │   ├── Distance &amp; Ranging
 │   │   │   ├── esp-ld06-lidar      — LD06 LiDAR interface    🧭
