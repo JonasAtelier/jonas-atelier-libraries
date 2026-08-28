@@ -26,6 +26,7 @@ Jonas Atelier
 │   │   ├── Motion &amp; Orientation
 │   │   │   ├── esp-bmi088-imu   — BMI088 IMU interface    🧪
 │   │   │   ├── esp-icm45686-imu — ICM-45686 IMU interface 🧪
+│   │   │   ├── esp-mpu6050-imu  — MPU-6050 IMU interface  🧪
 │   │   │   ├── esp-bno085-imu   — BNO085 IMU interface    🧭
 │   │   │   └── esp-icm42688-imu — ICM-42688 IMU interface 🧭
 │   │   │
