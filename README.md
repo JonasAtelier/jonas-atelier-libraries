@@ -18,9 +18,9 @@
 Jonas Atelier
 ├── ⚡ ESP32 / ESP-IDF
 │   ├── Actuators
-│   │   ├── esp-c620-control    — C620 motor control      🧪
-│   │   ├── esp-tmc5240-stepper — TMC5240 stepper driver  🧪
-│   │   └── esp-pca9685-pwm     — PCA9685 PWM driver      🧭
+│   │   ├── esp-c620-control    — C620 motor control     🧪
+│   │   ├── esp-tmc5240-stepper — TMC5240 stepper driver 🧪
+│   │   └── esp-pca9685-pwm     — PCA9685 16-ch PWM      🧪
 │   │
 │   ├── Sensors
 │   │   ├── Motion &amp; Orientation
@@ -31,7 +31,8 @@ Jonas Atelier
 │   │   │   └── esp-icm42688-imu — ICM-42688 IMU interface 🧭
 │   │   │
 │   │   ├── Magnetic Field
-│   │   │   └── esp-qmc5883l-mag — QMC5883L magnetometer 🧪
+│   │   │   ├── esp-qmc5883l-mag — QMC5883L magnetometer  🧪
+│   │   │   └── esp-mmc5983-mag  — MMC5983MA magnetometer 🧭
 │   │   │
 │   │   ├── Distance &amp; Ranging
 │   │   │   ├── esp-ld06-lidar      — LD06 LiDAR interface    🧭
@@ -42,14 +43,16 @@ Jonas Atelier
 │   │   │   └── esp-ublox-gnss   — u-blox M8/M10 GNSS  🧭
 │   │   │
 │   │   ├── Encoders
-│   │   │   ├── esp-as5600-encoder     — AS5600 magnetic encoder   🚧
-│   │   │   └── esp-as5048a-encoder    — AS5048A magnetic encoder  🧭
+│   │   │   ├── esp-as5600-encoder  — AS5600 magnetic encoder  🚧
+│   │   │   ├── esp-as5048a-encoder — AS5048A magnetic encoder 🧭
+│   │   │   └── esp-as5047p-encoder — AS5047P SPI encoder, FOC 🧭
 │   │   │
 │   │   ├── Pressure &amp; Altitude
 │   │   │   └── esp-dps310-baro — DPS310 barometer 🧪
 │   │   │
 │   │   ├── Force &amp; Load
-│   │   │   └── esp-hx711-loadcell — HX711 load cell amplifier 🧪
+│   │   │   ├── esp-hx711-loadcell   — HX711 load cell amplifier 🧪
+│   │   │   └── esp-nau7802-loadcell — NAU7802 bridge ADC, I2C   🧪
 │   │   │
 │   │   └── Power &amp; Battery
 │   │       ├── esp-ina2xx-sensor      — INA2xx power monitor       🧪
@@ -60,8 +63,9 @@ Jonas Atelier
 │   │   └── esp-ps-controller   — PS4/PS5 controller input  🧪
 │   │
 │   ├── I/O &amp; Bus Expansion
-│   │   ├── esp-mcp23-expander   — MCP23017 I/O expander       🚧
-│   │   └── esp-tca9548a-mux     — TCA9548A I2C multiplexer    🧭
+│   │   ├── esp-mcp23-expander — MCP23017 I/O expander    🚧
+│   │   ├── esp-ads1115-adc    — ADS1115 4-ch 16-bit ADC  🧪
+│   │   └── esp-tca9548a-mux   — TCA9548A I2C multiplexer 🧭
 │   │
 │   ├── Communications
 │   │   ├── esp-sn65hvd230-can   — CAN transceiver driver  ✅  <a href="https://github.com/JonasAtelier/esp-sn65hvd230-can">🔗 GitHub</a>
