@@ -51,8 +51,10 @@ Jonas Atelier
 │   │   ├── Force &amp; Load
 │   │   │   └── esp-hx711-loadcell — HX711 load cell amplifier 🧪
 │   │   │
-│   │   └── Power Monitoring
-│   │       └── esp-ina2xx-sensor   — INA2xx power monitor  🧪
+│   │   └── Power &amp; Battery
+│   │       ├── esp-ina2xx-sensor      — INA2xx power monitor       🧪
+│   │       ├── esp-max17048-fuelgauge — MAX17048 1S fuel gauge     🧪
+│   │       └── esp-bq769x0-bms        — bq769x0 3-15S pack monitor 🧪
 │   │
 │   ├── Input &amp; Controllers
 │   │   └── esp-ps-controller   — PS4/PS5 controller input  🧪
