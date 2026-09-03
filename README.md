@@ -18,9 +18,11 @@
 Jonas Atelier
 ├── ⚡ ESP32 / ESP-IDF
 │   ├── Actuators
-│   │   ├── esp-c620-control    — C620 motor control     🧪
-│   │   ├── esp-tmc5240-stepper — TMC5240 stepper driver 🧪
-│   │   └── esp-pca9685-pwm     — PCA9685 16-ch PWM      🧪
+│   │   ├── esp-c620-control       — C620 motor control       🧪
+│   │   ├── esp-tmc5240-stepper    — TMC5240 stepper driver   🧪
+│   │   ├── esp-tmc2209-stepper    — TMC2209 stepper, UART    🚧
+│   │   ├── esp-drv8323-gatedriver — DRV8323 BLDC gate driver 🚧
+│   │   └── esp-pca9685-pwm        — PCA9685 16-ch PWM        🧪
 │   │
 │   ├── Sensors
 │   │   ├── Motion &amp; Orientation
@@ -37,15 +39,16 @@ Jonas Atelier
 │   │   ├── Distance &amp; Ranging
 │   │   │   ├── esp-ld06-lidar      — LD06 LiDAR interface    🧭
 │   │   │   ├── esp-tfmini-lidar    — TFmini LiDAR interface  🧭
-│   │   │   └── esp-vl53l1x-tof     — VL53L1X ToF sensor      🧭
+│   │   │   └── esp-vl53l1x-tof     — VL53L1X ToF sensor      🚧
 │   │   │
 │   │   ├── GNSS &amp; Navigation
 │   │   │   └── esp-ublox-gnss   — u-blox M8/M10 GNSS  🧭
 │   │   │
 │   │   ├── Encoders
-│   │   │   ├── esp-as5600-encoder  — AS5600 magnetic encoder  🚧
-│   │   │   ├── esp-as5048a-encoder — AS5048A magnetic encoder 🧭
-│   │   │   └── esp-as5047p-encoder — AS5047P SPI encoder, FOC 🧭
+│   │   │   ├── esp-as5600-encoder  — AS5600 magnetic encoder   🚧
+│   │   │   ├── esp-as5047p-encoder — AS5047P SPI encoder, FOC  🚧
+│   │   │   ├── esp-amt102-encoder  — AMT102-V quadrature, PCNT 🚧
+│   │   │   └── esp-as5048a-encoder — AS5048A magnetic encoder  🧭
 │   │   │
 │   │   ├── Pressure &amp; Altitude
 │   │   │   └── esp-dps310-baro — DPS310 barometer 🧪
