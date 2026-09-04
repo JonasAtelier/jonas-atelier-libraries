@@ -14,7 +14,6 @@
   ✅ Available · 🧪 Hardware validation · 🚧 On-going · 🧭 Coming soon
 </p>
 
-<!-- tree:start -->
 <pre>
 Jonas Atelier
 ├── ⚡ ESP32 / ESP-IDF
@@ -101,7 +100,9 @@ Jonas Atelier
 │   │   ├── upid — Portable PID control           ✅  <a href="https://github.com/JonasAtelier/upid">🔗 GitHub</a>
 │   │   ├── fsm  — Finite state machines          🧪
 │   │   ├── kin  — Forward/inverse kinematics     🧪
-│   │   └── imp  — Impedance &amp; admittance control 🧪
+│   │   ├── imp  — Impedance &amp; admittance control 🧪
+│   │   ├── foc  — Field-oriented control maths   🧭
+│   │   └── traj — Trapezoidal &amp; S-curve profiles 🧭
 │   │
 │   └── Filters
 │       ├── f_kalman        — Scalar Kalman filter 🧪
@@ -117,7 +118,6 @@ Jonas Atelier
     ├── 🤖 Helios  — Humanoid robot 🧭
     └── 🦾 Jarvis  — Robotic arm    🧭
 </pre>
-<!-- tree:end -->
 
 <p align="center">
   Projects become clickable after hardware validation and public release.
@@ -125,34 +125,3 @@ Jonas Atelier
   Built in the
   <a href="https://github.com/JonasAtelier">Jonas Atelier</a> workshop.
 </p>
-
----
-
-## Adding an entry, or an idea
-
-The tree above is generated. `catalog.yml` is the only file to edit — an idea
-is an entry like any other, it just has no repository yet:
-
-```yaml
-- name: esp-bno085-imu
-  blurb: BNO085 fused IMU, UART-RVC
-  status: idea          # available | validating | ongoing | idea
-```
-
-Then:
-
-```sh
-python3 tools/render.py            # rewrite this tree and the profile tree
-python3 tools/render.py --stats    # ...and refresh the profile ledger
-python3 tools/check.py             # prove nothing was dropped or mangled
-```
-
-`status` is the whole workflow: an entry starts as `idea` 🧭, becomes `ongoing`
-🚧 once it is written, `validating` 🧪 while it is being checked on hardware,
-and `available` ✅ when it is public. Add `url:` when it goes public and it
-becomes clickable; add `highlight: true` to promote it onto the
-[profile](https://github.com/JonasAtelier) as well, with an optional
-`profile_blurb:` if it wants different wording there.
-
-Everything between the `<!-- tree:start -->` and `<!-- tree:end -->` markers in
-either README is overwritten, so do not hand-edit inside them.
