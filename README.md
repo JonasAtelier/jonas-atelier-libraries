@@ -14,6 +14,7 @@
   ✅ Available · 🧪 Hardware validation · 🚧 On-going · 🧭 Coming soon
 </p>
 
+<!-- tree:start -->
 <pre>
 Jonas Atelier
 ├── ⚡ ESP32 / ESP-IDF
@@ -37,12 +38,12 @@ Jonas Atelier
 │   │   │   └── esp-mmc5983-mag  — MMC5983MA magnetometer 🧭
 │   │   │
 │   │   ├── Distance &amp; Ranging
-│   │   │   ├── esp-ld06-lidar      — LD06 LiDAR interface    🧭
-│   │   │   ├── esp-tfmini-lidar    — TFmini LiDAR interface  🧭
-│   │   │   └── esp-vl53l1x-tof     — VL53L1X ToF sensor      🚧
+│   │   │   ├── esp-ld06-lidar   — LD06 LiDAR interface   🧭
+│   │   │   ├── esp-tfmini-lidar — TFmini LiDAR interface 🧭
+│   │   │   └── esp-vl53l1x-tof  — VL53L1X ToF sensor     🚧
 │   │   │
 │   │   ├── GNSS &amp; Navigation
-│   │   │   └── esp-ublox-gnss   — u-blox M8/M10 GNSS  🧭
+│   │   │   └── esp-ublox-gnss — u-blox M8/M10 GNSS 🧭
 │   │   │
 │   │   ├── Encoders
 │   │   │   ├── esp-as5600-encoder  — AS5600 magnetic encoder   🚧
@@ -63,7 +64,7 @@ Jonas Atelier
 │   │       └── esp-bq769x0-bms        — bq769x0 3-15S pack monitor 🧪
 │   │
 │   ├── Input &amp; Controllers
-│   │   └── esp-ps-controller   — PS4/PS5 controller input  🧪
+│   │   └── esp-ps-controller — PS4/PS5 controller input 🧪
 │   │
 │   ├── I/O &amp; Bus Expansion
 │   │   ├── esp-mcp23-expander — MCP23017 I/O expander    🚧
@@ -71,8 +72,8 @@ Jonas Atelier
 │   │   └── esp-tca9548a-mux   — TCA9548A I2C multiplexer 🧭
 │   │
 │   ├── Communications
-│   │   ├── esp-sn65hvd230-can   — CAN transceiver driver  ✅  <a href="https://github.com/JonasAtelier/esp-sn65hvd230-can">🔗 GitHub</a>
-│   │   └── esp-dw1000-uwb       — DW1000 UWB ranging      🧪
+│   │   ├── esp-sn65hvd230-can — CAN transceiver driver ✅  <a href="https://github.com/JonasAtelier/esp-sn65hvd230-can">🔗 GitHub</a>
+│   │   └── esp-dw1000-uwb     — DW1000 UWB ranging     🧪
 │   │
 │   └── Camera
 │       └── Coming soon 🧭
@@ -85,37 +86,38 @@ Jonas Atelier
 │
 ├── 🐧 Linux
 │   ├── Drivers
-│   │   └── nv-ps-controller — PS4/PS5 controller input  🚧
+│   │   └── nv-ps-controller — PS4/PS5 controller input 🚧
 │   │
 │   ├── ROS2
-│   │   └── rs-d455-camera — RealSense D455 camera  🧭
+│   │   └── rs-d455-camera — RealSense D455 camera 🧭
 │   │
 │   └── Communication
-│       └── Robust — ROS2-style C framework  🚧
+│       └── Robust — ROS2-style C framework 🚧
 │
 │   Prefix key: rs- = ROS2 · nv- = NVIDIA Jetson Linux · rasp- = Raspberry Pi
 │
 ├── 🧰 General
 │   ├── Control &amp; Algorithms
-│   │   ├── upid — Portable PID control  ✅  <a href="https://github.com/JonasAtelier/upid">🔗 GitHub</a>
-│   │   ├── fsm  — Finite state machines           🧪
-│   │   ├── kin  — Forward/inverse kinematics      🧪
-│   │   └── imp  — Impedance &amp; admittance control  🧪
+│   │   ├── upid — Portable PID control           ✅  <a href="https://github.com/JonasAtelier/upid">🔗 GitHub</a>
+│   │   ├── fsm  — Finite state machines          🧪
+│   │   ├── kin  — Forward/inverse kinematics     🧪
+│   │   └── imp  — Impedance &amp; admittance control 🧪
 │   │
 │   └── Filters
-│       ├── f_kalman        — Scalar Kalman filter  🧪
-│       ├── f_complementary — Complementary filter  🧪
-│       ├── f_particle      — Particle filter       🧪
-│       └── f_hampel        — Hampel filtering      🧭
+│       ├── f_kalman        — Scalar Kalman filter 🧪
+│       ├── f_complementary — Complementary filter 🧪
+│       ├── f_particle      — Particle filter      🧪
+│       └── f_hampel        — Hampel filtering     🧭
 │
 └── 🛠️ Misc
-    ├── 🦅 Hawk    — Drone           🧭
-    ├── 🐕 Dingo   — Robotic dog     🧭
-    ├── 🕷️ Arachne — Spider robot    🧭
-    ├── 🚚 Navis   — AGV             🧭
-    ├── 🤖 Helios  — Humanoid robot  🧭
-    └── 🦾 Jarvis  — Robotic arm     🧭
+    ├── 🦅 Hawk    — Drone          🧭
+    ├── 🐕 Dingo   — Robotic dog    🧭
+    ├── 🕷️ Arachne — Spider robot   🧭
+    ├── 🚚 Navis   — AGV            🧭
+    ├── 🤖 Helios  — Humanoid robot 🧭
+    └── 🦾 Jarvis  — Robotic arm    🧭
 </pre>
+<!-- tree:end -->
 
 <p align="center">
   Projects become clickable after hardware validation and public release.
@@ -123,3 +125,34 @@ Jonas Atelier
   Built in the
   <a href="https://github.com/JonasAtelier">Jonas Atelier</a> workshop.
 </p>
+
+---
+
+## Adding an entry, or an idea
+
+The tree above is generated. `catalog.yml` is the only file to edit — an idea
+is an entry like any other, it just has no repository yet:
+
+```yaml
+- name: esp-bno085-imu
+  blurb: BNO085 fused IMU, UART-RVC
+  status: idea          # available | validating | ongoing | idea
+```
+
+Then:
+
+```sh
+python3 tools/render.py            # rewrite this tree and the profile tree
+python3 tools/render.py --stats    # ...and refresh the profile ledger
+python3 tools/check.py             # prove nothing was dropped or mangled
+```
+
+`status` is the whole workflow: an entry starts as `idea` 🧭, becomes `ongoing`
+🚧 once it is written, `validating` 🧪 while it is being checked on hardware,
+and `available` ✅ when it is public. Add `url:` when it goes public and it
+becomes clickable; add `highlight: true` to promote it onto the
+[profile](https://github.com/JonasAtelier) as well, with an optional
+`profile_blurb:` if it wants different wording there.
+
+Everything between the `<!-- tree:start -->` and `<!-- tree:end -->` markers in
+either README is overwritten, so do not hand-edit inside them.

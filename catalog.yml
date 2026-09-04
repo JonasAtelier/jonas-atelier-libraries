@@ -1,0 +1,246 @@
+# Source of truth for the catalog and the profile trees.
+#
+# status: available | validating | ongoing | idea
+#   available  ✅  public and hardware validated
+#   validating 🧪  written, being checked on real hardware
+#   ongoing    🚧  written, not yet on hardware
+#   idea       🧭  wanted, not started - this is the backlog
+#
+# highlight: true puts an entry on the profile README as well.
+# Regenerate both READMEs with: python3 tools/render.py
+
+tree:
+- name: ⚡ ESP32 / ESP-IDF
+  children:
+  - name: Actuators
+    children:
+    - name: esp-c620-control
+      blurb: C620 motor control
+      status: validating
+      highlight: true
+      profile_blurb: RoboMaster M3508 / C620 motor control
+    - name: esp-tmc5240-stepper
+      blurb: TMC5240 stepper driver
+      status: validating
+    - name: esp-tmc2209-stepper
+      blurb: TMC2209 stepper, UART
+      status: ongoing
+    - name: esp-drv8323-gatedriver
+      blurb: DRV8323 BLDC gate driver
+      status: ongoing
+    - name: esp-pca9685-pwm
+      blurb: PCA9685 16-ch PWM
+      status: validating
+  - name: Sensors
+    children:
+    - name: Motion & Orientation
+      children:
+      - name: esp-bmi088-imu
+        blurb: BMI088 IMU interface
+        status: validating
+        highlight: true
+        profile_blurb: BMI088 accelerometer + gyroscope
+      - name: esp-icm45686-imu
+        blurb: ICM-45686 IMU interface
+        status: validating
+      - name: esp-mpu6050-imu
+        blurb: MPU-6050 IMU interface
+        status: validating
+      - name: esp-bno085-imu
+        blurb: BNO085 IMU interface
+        status: idea
+      - name: esp-icm42688-imu
+        blurb: ICM-42688 IMU interface
+        status: idea
+    - name: Magnetic Field
+      children:
+      - name: esp-qmc5883l-mag
+        blurb: QMC5883L magnetometer
+        status: validating
+      - name: esp-mmc5983-mag
+        blurb: MMC5983MA magnetometer
+        status: idea
+    - name: Distance & Ranging
+      children:
+      - name: esp-ld06-lidar
+        blurb: LD06 LiDAR interface
+        status: idea
+      - name: esp-tfmini-lidar
+        blurb: TFmini LiDAR interface
+        status: idea
+      - name: esp-vl53l1x-tof
+        blurb: VL53L1X ToF sensor
+        status: ongoing
+    - name: GNSS & Navigation
+      children:
+      - name: esp-ublox-gnss
+        blurb: u-blox M8/M10 GNSS
+        status: idea
+    - name: Encoders
+      children:
+      - name: esp-as5600-encoder
+        blurb: AS5600 magnetic encoder
+        status: ongoing
+        highlight: true
+        profile_blurb: AS5600 magnetic rotary encoder
+      - name: esp-as5047p-encoder
+        blurb: AS5047P SPI encoder, FOC
+        status: ongoing
+      - name: esp-amt102-encoder
+        blurb: AMT102-V quadrature, PCNT
+        status: ongoing
+      - name: esp-as5048a-encoder
+        blurb: AS5048A magnetic encoder
+        status: idea
+    - name: Pressure & Altitude
+      children:
+      - name: esp-dps310-baro
+        blurb: DPS310 barometer
+        status: validating
+    - name: Force & Load
+      children:
+      - name: esp-hx711-loadcell
+        blurb: HX711 load cell amplifier
+        status: validating
+      - name: esp-nau7802-loadcell
+        blurb: NAU7802 bridge ADC, I2C
+        status: validating
+    - name: Power & Battery
+      children:
+      - name: esp-ina2xx-sensor
+        blurb: INA2xx power monitor
+        status: validating
+        highlight: true
+        profile_blurb: INA219/226/228 power monitors
+      - name: esp-max17048-fuelgauge
+        blurb: MAX17048 1S fuel gauge
+        status: validating
+      - name: esp-bq769x0-bms
+        blurb: bq769x0 3-15S pack monitor
+        status: validating
+  - name: Input & Controllers
+    children:
+    - name: esp-ps-controller
+      blurb: PS4/PS5 controller input
+      status: validating
+      highlight: true
+      profile_blurb: DualShock 4 / DualSense over BT
+  - name: I/O & Bus Expansion
+    children:
+    - name: esp-mcp23-expander
+      blurb: MCP23017 I/O expander
+      status: ongoing
+      highlight: true
+    - name: esp-ads1115-adc
+      blurb: ADS1115 4-ch 16-bit ADC
+      status: validating
+    - name: esp-tca9548a-mux
+      blurb: TCA9548A I2C multiplexer
+      status: idea
+  - name: Communications
+    children:
+    - name: esp-sn65hvd230-can
+      blurb: CAN transceiver driver
+      status: available
+      url: https://github.com/JonasAtelier/esp-sn65hvd230-can
+      highlight: true
+      profile_blurb: Classic CAN over TWAI
+    - name: esp-dw1000-uwb
+      blurb: DW1000 UWB ranging
+      status: validating
+      highlight: true
+      profile_blurb: DW1000 UWB two-way ranging
+  - name: Camera
+    children:
+    - name: Coming soon
+      status: idea
+- name: 🔷 STM32
+  children:
+  - name: Coming soon
+    status: idea
+- name: ♾️ Arduino
+  children:
+  - name: Coming soon
+    status: idea
+- name: 🐧 Linux
+  children:
+  - name: Drivers
+    children:
+    - name: nv-ps-controller
+      blurb: PS4/PS5 controller input
+      status: ongoing
+      highlight: true
+      profile_blurb: PS4 / PS5 pads on NVIDIA Jetson
+  - name: ROS2
+    children:
+    - name: rs-d455-camera
+      blurb: RealSense D455 camera
+      status: idea
+  - name: Communication
+    children:
+    - name: Robust
+      blurb: ROS2-style C framework
+      status: ongoing
+      highlight: true
+      profile_blurb: ROS 2's model, in plain C, one device
+  note: 'Prefix key: rs- = ROS2 · nv- = NVIDIA Jetson Linux · rasp- = Raspberry Pi'
+- name: 🧰 General
+  children:
+  - name: Control & Algorithms
+    children:
+    - name: upid
+      blurb: Portable PID control
+      status: available
+      url: https://github.com/JonasAtelier/upid
+      highlight: true
+    - name: fsm
+      blurb: Finite state machines
+      status: validating
+      highlight: true
+      profile_blurb: Table-driven finite state machines
+    - name: kin
+      blurb: Forward/inverse kinematics
+      status: validating
+      highlight: true
+      profile_blurb: Forward / inverse kinematics
+    - name: imp
+      blurb: Impedance & admittance control
+      status: validating
+      highlight: true
+  - name: Filters
+    children:
+    - name: f_kalman
+      blurb: Scalar Kalman filter
+      status: validating
+      highlight: true
+    - name: f_complementary
+      blurb: Complementary filter
+      status: validating
+      highlight: true
+    - name: f_particle
+      blurb: Particle filter
+      status: validating
+      highlight: true
+    - name: f_hampel
+      blurb: Hampel filtering
+      status: idea
+- name: 🛠️ Misc
+  children:
+  - name: 🦅 Hawk
+    blurb: Drone
+    status: idea
+  - name: 🐕 Dingo
+    blurb: Robotic dog
+    status: idea
+  - name: 🕷️ Arachne
+    blurb: Spider robot
+    status: idea
+  - name: 🚚 Navis
+    blurb: AGV
+    status: idea
+  - name: 🤖 Helios
+    blurb: Humanoid robot
+    status: idea
+  - name: 🦾 Jarvis
+    blurb: Robotic arm
+    status: idea
