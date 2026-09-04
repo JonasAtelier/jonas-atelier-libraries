@@ -37,7 +37,7 @@ Jonas Atelier
 │   │   │   └── esp-mmc5983-mag  — MMC5983MA magnetometer 🧭
 │   │   │
 │   │   ├── Distance &amp; Ranging
-│   │   │   ├── esp-ld06-lidar   — LD06 LiDAR interface   🧭
+│   │   │   ├── esp-ld19-lidar   — LD19/LD06 LiDAR, UART  🚧
 │   │   │   ├── esp-tfmini-lidar — TFmini LiDAR interface 🧭
 │   │   │   └── esp-vl53l1x-tof  — VL53L1X ToF sensor     🚧
 │   │   │
@@ -72,6 +72,7 @@ Jonas Atelier
 │   │
 │   ├── Communications
 │   │   ├── esp-sn65hvd230-can — CAN transceiver driver ✅  <a href="https://github.com/JonasAtelier/esp-sn65hvd230-can">🔗 GitHub</a>
+│   │   ├── esp-mcp2515-can    — MCP2515 CAN over SPI   🚧
 │   │   └── esp-dw1000-uwb     — DW1000 UWB ranging     🧪
 │   │
 │   └── Camera
@@ -98,8 +99,11 @@ Jonas Atelier
 ├── 🧰 General
 │   ├── Control &amp; Algorithms
 │   │   ├── upid — Portable PID control           ✅  <a href="https://github.com/JonasAtelier/upid">🔗 GitHub</a>
+│   │   ├── adrc — Active disturbance rejection   🚧
+│   │   ├── lqr  — Discrete-time LQR gains        🚧
 │   │   ├── fsm  — Finite state machines          🧪
 │   │   ├── kin  — Forward/inverse kinematics     🧪
+│   │   ├── mob  — Wheel kinematics &amp; odometry   🚧
 │   │   ├── imp  — Impedance &amp; admittance control 🧪
 │   │   ├── foc  — Field-oriented control maths   🧭
 │   │   └── traj — Trapezoidal &amp; S-curve profiles 🧭
@@ -108,6 +112,7 @@ Jonas Atelier
 │       ├── f_kalman        — Scalar Kalman filter 🧪
 │       ├── f_complementary — Complementary filter 🧪
 │       ├── f_particle      — Particle filter      🧪
+│       ├── f_madgwick      — Madgwick AHRS filter 🚧
 │       └── f_hampel        — Hampel filtering     🧭
 │
 └── 🛠️ Misc
