@@ -101,9 +101,12 @@ Jonas Atelier
 │   │   ├── upid — Portable PID control           ✅  <a href="https://github.com/JonasAtelier/upid">🔗 GitHub</a>
 │   │   ├── adrc — Active disturbance rejection   🚧
 │   │   ├── lqr  — Discrete-time LQR gains        🚧
+│   │   ├── bt   — Behaviour trees                🚧
 │   │   ├── fsm  — Finite state machines          🧪
 │   │   ├── kin  — Forward/inverse kinematics     🧪
 │   │   ├── mob  — Wheel kinematics &amp; odometry   🚧
+│   │   ├── dyn  — Arm dynamics, gravity comp     🚧
+│   │   ├── path — Spline path &amp; pure pursuit    🚧
 │   │   ├── imp  — Impedance &amp; admittance control 🧪
 │   │   ├── foc  — Field-oriented control maths   🧭
 │   │   └── traj — Trapezoidal &amp; S-curve profiles 🧭
@@ -113,6 +116,8 @@ Jonas Atelier
 │       ├── f_complementary — Complementary filter 🧪
 │       ├── f_particle      — Particle filter      🧪
 │       ├── f_madgwick      — Madgwick AHRS filter 🚧
+│       ├── f_ekf           — Extended Kalman      🚧
+│       ├── f_rls           — Recursive least sq.  🚧
 │       └── f_hampel        — Hampel filtering     🧭
 │
 └── 🛠️ Misc
