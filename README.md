@@ -58,12 +58,16 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | `esp-max17048-fuelgauge` | MAX17048 1S fuel gauge | 🧪 |
 | `esp-bq769x0-bms` | bq769x0 3-15S pack monitor | 🧪 |
 | `esp-ps-controller` | PS4/PS5 controller input | 🧪 |
+| `esp-crsf-rc` | CRSF/ELRS RC receiver, UART | 🧪 |
 | `esp-mcp23-expander` | MCP23017 I/O expander | 🚧 |
 | `esp-ads1115-adc` | ADS1115 4-ch 16-bit ADC | 🧪 |
 | `esp-tca9548a-mux` | TCA9548A I2C multiplexer | 🧭 |
+| `esp-ssd1306-oled` | SSD1306 OLED display, I2C | 🧪 |
 | [esp-sn65hvd230-can](https://github.com/JonasAtelier/esp-sn65hvd230-can) | ESP32 CAN bus interface | 🧪 |
 | `esp-mcp2515-can` | MCP2515 CAN over SPI | 🧪 |
 | `esp-dw1000-uwb` | DW1000 UWB ranging | 🧪 |
+| `esp-ota-wifi` | On-demand Wi-Fi OTA update | 🧪 |
+| `esp-sdlog` | Buffered SD-card logger | 🚧 |
 
 </details>
 
@@ -82,7 +86,7 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | `dyn` | Arm dynamics, gravity comp | 🚧 |
 | `path` | Spline path & pure pursuit | 🚧 |
 | `imp` | Impedance & admittance control | 🧪 |
-| `foc` | Field-oriented control maths | 🧭 |
+| `foc` | Field-oriented control maths | 🧪 |
 | `traj` | Trapezoidal & S-curve profiles | 🧭 |
 | `f_kalman` | Scalar Kalman filter | 🧪 |
 | `f_complementary` | Complementary filter | 🧪 |
@@ -111,8 +115,11 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | Project | Use it for | Status |
 |---|---|---|
 | `Hawk` | Drone | 🧭 |
+| `Hawk_control` | ROS 2 drone control, PS4-driven | 🚧 |
 | `Dingo` | Robotic dog | 🧭 |
 | `dingo_s3` | ESP32-S3 Dingo firmware; not verified on robot hardware | 🚧 |
+| `flux_s3` | ESP32-S3 sensored FOC drive, esp-forge app | 🚧 |
+| `nova_s3` | ESP32-S3 swerve module | 🚧 |
 | `Arachne` | Spider robot | 🧭 |
 | `Navis` | AGV | 🧭 |
 | `Helios` | Humanoid robot | 🧭 |
@@ -126,10 +133,12 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | Project | Use it for | Status |
 |---|---|---|
 | `esp-forge` | Fetch an ESP-IDF app and selected libraries, then build firmware | 🚧 |
+| `stm-forge` | Fetch an STM32 app and selected libraries, then build firmware | 🚧 |
+| `rmboard_f427` | RoboMaster Board A bring-up app for stm-forge | 🚧 |
 
 </details>
 
-**Also planned:** STM32, Arduino, and ESP32 camera projects.
+**Also planned:** Arduino and ESP32 camera projects.
 
 Links point to public repositories. Public availability does not imply hardware
 validation; check each project's README before using it.
