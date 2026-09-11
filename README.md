@@ -52,6 +52,7 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | `esp-amt102-encoder` | AMT102-V quadrature, PCNT | 🚧 |
 | `esp-as5048a-encoder` | AS5048A magnetic encoder | 🧭 |
 | `esp-dps310-baro` | DPS310 barometer | 🧪 |
+| `esp-ms5611-baro` | MS5611 barometer, I2C | 🚧 |
 | `esp-hx711-loadcell` | HX711 load cell amplifier | 🧪 |
 | `esp-nau7802-loadcell` | NAU7802 bridge ADC, I2C | 🧪 |
 | `esp-ina2xx-sensor` | INA2xx power monitor | 🧪 |
@@ -63,9 +64,11 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | `esp-ads1115-adc` | ADS1115 4-ch 16-bit ADC | 🧪 |
 | `esp-tca9548a-mux` | TCA9548A I2C multiplexer | 🧭 |
 | `esp-ssd1306-oled` | SSD1306 OLED display, I2C | 🧪 |
+| `esp-ws2812-led` | WS2812 RGB LEDs, RMT | 🚧 |
 | [esp-sn65hvd230-can](https://github.com/JonasAtelier/esp-sn65hvd230-can) | ESP32 CAN bus interface | 🧪 |
 | `esp-mcp2515-can` | MCP2515 CAN over SPI | 🧪 |
 | `esp-dw1000-uwb` | DW1000 UWB ranging | 🧪 |
+| `esp-espnow-link` | ESP-NOW packets between boards | 🚧 |
 | `esp-ota-wifi` | On-demand Wi-Fi OTA update | 🧪 |
 | `esp-sdlog` | Buffered SD-card logger | 🚧 |
 
