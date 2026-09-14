@@ -36,6 +36,7 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | `esp-tmc2209-stepper` | TMC2209 stepper, UART | 🚧 |
 | `esp-drv8323-gatedriver` | DRV8323 BLDC gate driver | 🚧 |
 | `esp-pca9685-pwm` | PCA9685 16-ch PWM | 🧪 |
+| `esp-servo-pwm` | RC servos on LEDC, no extra chip | 🚧 |
 | `esp-bmi088-imu` | BMI088 IMU interface | 🧪 |
 | `esp-icm45686-imu` | ICM-45686 IMU interface | 🧪 |
 | `esp-mpu6050-imu` | MPU-6050 IMU interface | 🧪 |
