@@ -10,7 +10,8 @@
 
 Reusable C libraries, ESP32 drivers, and robot projects from Jonas Atelier.
 This repo is the catalog; each project keeps its code and setup instructions
-in its own repository.
+in its own repository. IMUs are the exception: every IMU chip lives in one
+Linux-IIO-style subsystem, `esp-imu`, behind a single `struct imu_dev` API.
 
 ## Start here
 
@@ -37,11 +38,9 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | `esp-drv8323-gatedriver` | DRV8323 BLDC gate driver | 🚧 |
 | `esp-pca9685-pwm` | PCA9685 16-ch PWM | 🧪 |
 | `esp-servo-pwm` | RC servos on LEDC, no extra chip | 🚧 |
-| `esp-bmi088-imu` | BMI088 IMU interface | 🧪 |
-| `esp-icm45686-imu` | ICM-45686 IMU interface | 🧪 |
-| `esp-mpu6050-imu` | MPU-6050 IMU interface | 🧪 |
-| `esp-bno085-imu` | BNO085 IMU interface | 🧭 |
-| `esp-icm42688-imu` | ICM-42688 IMU interface | 🧭 |
+| `esp-imu` | IMU subsystem: MPU-6050, ICM-45686, BMI088 | 🧪 |
+| `esp-imu` + BNO085 | BNO085 chip for esp-imu | 🧭 |
+| `esp-imu` + ICM-42688 | ICM-42688 chip for esp-imu | 🧭 |
 | `esp-qmc5883l-mag` | QMC5883L magnetometer | 🧪 |
 | `esp-mmc5983-mag` | MMC5983MA magnetometer | 🧭 |
 | `esp-ld19-lidar` | LD19/LD06 LiDAR, UART | 🚧 |
