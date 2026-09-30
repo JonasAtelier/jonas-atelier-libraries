@@ -10,8 +10,10 @@
 
 Reusable C libraries, ESP32 drivers, and robot projects from Jonas Atelier.
 This repo is the catalog; each project keeps its code and setup instructions
-in its own repository. IMUs are the exception: every IMU chip lives in one
-Linux-IIO-style subsystem, `esp-imu`, behind a single `struct imu_dev` API.
+in its own repository. IMUs, barometers and encoders are the exception: each
+family lives in one Linux-IIO-style subsystem, `esp-imu`, `esp-baro` or
+`esp-encoder`, behind a single `struct imu_dev`, `struct baro_dev` or
+`struct encoder_dev` API.
 
 ## Start here
 
@@ -47,12 +49,9 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | `esp-tfmini-lidar` | TFmini LiDAR interface | 🧭 |
 | `esp-vl53l1x-tof` | VL53L1X ToF sensor | 🚧 |
 | `esp-ublox-gnss` | u-blox M8/M10 GNSS | 🧭 |
-| `esp-as5600-encoder` | AS5600 magnetic encoder | 🚧 |
-| `esp-as5047p-encoder` | AS5047P SPI encoder, FOC | 🚧 |
-| `esp-amt102-encoder` | AMT102-V quadrature, PCNT | 🚧 |
-| `esp-as5048a-encoder` | AS5048A magnetic encoder | 🧭 |
-| `esp-dps310-baro` | DPS310 barometer | 🧪 |
-| `esp-ms5611-baro` | MS5611 barometer, I2C | 🚧 |
+| `esp-encoder` | Encoder subsystem: AS5600, AS5047P, AMT102-V | 🚧 |
+| `esp-encoder` + AS5048A | AS5048A chip for esp-encoder | 🧭 |
+| `esp-baro` | Barometer subsystem: BMP280, DPS310, MS5611 | 🧪 |
 | `esp-hx711-loadcell` | HX711 load cell amplifier | 🧪 |
 | `esp-nau7802-loadcell` | NAU7802 bridge ADC, I2C | 🧪 |
 | `esp-ina2xx-sensor` | INA2xx power monitor | 🧪 |
