@@ -10,10 +10,10 @@
 
 Reusable C libraries, ESP32 drivers, and robot projects from Jonas Atelier.
 This repo is the catalog; each project keeps its code and setup instructions
-in its own repository. IMUs, barometers and encoders are the exception: each
-family lives in one Linux-IIO-style subsystem, `esp-imu`, `esp-baro` or
-`esp-encoder`, behind a single `struct imu_dev`, `struct baro_dev` or
-`struct encoder_dev` API.
+in its own repository. IMUs, barometers, encoders and magnetometers are the
+exception: each family lives in one Linux-IIO-style subsystem, `esp-imu`,
+`esp-baro`, `esp-encoder` or `esp-compass`, behind a single `struct imu_dev`,
+`struct baro_dev`, `struct encoder_dev` or `struct compass_dev` API.
 
 ## Start here
 
@@ -43,15 +43,15 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | `esp-imu` | IMU subsystem: MPU-6050, ICM-45686, BMI088 | 🧪 |
 | `esp-imu` + BNO085 | BNO085 chip for esp-imu | 🧭 |
 | `esp-imu` + ICM-42688 | ICM-42688 chip for esp-imu | 🧭 |
-| `esp-qmc5883l-mag` | QMC5883L magnetometer | 🧪 |
-| `esp-mmc5983-mag` | MMC5983MA magnetometer | 🧭 |
+| `esp-compass` | Magnetometer subsystem: QMC5883L, QMC5883P | 🧪 |
+| `esp-compass` + MMC5983MA | MMC5983MA chip for esp-compass | 🧭 |
 | `esp-ld19-lidar` | LD19/LD06 LiDAR, UART | 🚧 |
 | `esp-tfmini-lidar` | TFmini LiDAR interface | 🧭 |
 | `esp-vl53l1x-tof` | VL53L1X ToF sensor | 🚧 |
 | `esp-ublox-gnss` | u-blox M8/M10 GNSS | 🧭 |
 | `esp-encoder` | Encoder subsystem: AS5600, AS5047P, AMT102-V | 🚧 |
 | `esp-encoder` + AS5048A | AS5048A chip for esp-encoder | 🧭 |
-| `esp-baro` | Barometer subsystem: BMP280, DPS310, MS5611 | 🧪 |
+| `esp-baro` | Barometer subsystem: BMP280, BMP388, DPS310, MS5611 | 🧪 |
 | `esp-hx711-loadcell` | HX711 load cell amplifier | 🧪 |
 | `esp-nau7802-loadcell` | NAU7802 bridge ADC, I2C | 🧪 |
 | `esp-ina2xx-sensor` | INA2xx power monitor | 🧪 |
