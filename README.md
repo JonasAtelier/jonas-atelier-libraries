@@ -35,6 +35,7 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | Project | Use it for | Status |
 |---|---|---|
 | `esp-c620-control` | C620 motor control | 🧪 |
+| `esp-HT03` | HT-03 actuators, MIT protocol over CAN | 🚧 |
 | `esp-tmc5240-stepper` | TMC5240 stepper driver | 🧪 |
 | `esp-tmc2209-stepper` | TMC2209 stepper, UART | 🚧 |
 | `esp-drv8323-gatedriver` | DRV8323 BLDC gate driver | 🚧 |
@@ -70,6 +71,18 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | `esp-espnow-link` | ESP-NOW packets between boards | 🚧 |
 | `esp-ota-wifi` | On-demand Wi-Fi OTA update | 🧪 |
 | `esp-sdlog` | Buffered SD-card logger | 🚧 |
+
+</details>
+
+<details>
+<summary>🔩 STM32 / HAL</summary>
+
+| Project | Use it for | Status |
+|---|---|---|
+| `stm-imu` | IMU subsystem: MPU-6050, ICM-45686, BMI088 | 🚧 |
+| `stm-baro` | Barometer subsystem: BMP280, BMP388, DPS310, MS5611 | 🚧 |
+| `stm-compass` | Magnetometer subsystem: QMC5883L, QMC5883P | 🚧 |
+| `stm-ina2xx-sensor` | INA2xx power monitor | 🚧 |
 
 </details>
 
