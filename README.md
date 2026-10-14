@@ -8,12 +8,11 @@
   <strong>Find a driver. Pick a library. Build your next project.</strong>
 </p>
 
-Reusable C libraries, ESP32 drivers, and robot projects from Jonas Atelier.
-This repo is the catalog; each project keeps its code and setup instructions
-in its own repository. IMUs, barometers, encoders and magnetometers are the
-exception: each family lives in one Linux-IIO-style subsystem, `esp-imu`,
-`esp-baro`, `esp-encoder` or `esp-compass`, behind a single `struct imu_dev`,
-`struct baro_dev`, `struct encoder_dev` or `struct compass_dev` API.
+Reusable C libraries, drivers for ESP32 and STM32, and robot projects from
+Jonas Atelier. This repo is the catalog; each project keeps its code and setup
+instructions in its own repository. Drivers are grouped by kind: chips that do
+the same job share one Linux-IIO-style library, `mcu-<cat>`, behind a single
+`struct <cat>_dev` API that builds unchanged on ESP-IDF and the STM32 HAL.
 
 ## Start here
 
@@ -30,59 +29,56 @@ validation status.
 Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧 In development · 🧭 Planned**
 
 <details>
+<summary>🔌 ESP32 + STM32</summary>
+
+| Project | Use it for | Status |
+|---|---|---|
+| `mcu-imu` | IMUs: MPU-6050, ICM-45686, BMI088, WT901C-TTL | 🧪 |
+| `mcu-imu` + ICM-42688-P | ICM-42688-P chip for mcu-imu, in progress | 🚧 |
+| `mcu-imu` + BMI270 | BMI270 chip for mcu-imu, in progress | 🚧 |
+| `mcu-imu` + BNO085 | BNO085 chip for mcu-imu | 🧭 |
+| `mcu-compass` | Magnetometers: QMC5883L, QMC5883P, IST8310, LIS3MDL, CMPS14 | 🧪 |
+| `mcu-compass` + MMC5983MA | MMC5983MA chip for mcu-compass | 🧭 |
+| `mcu-baro` | Barometers: BMP280, BMP388, DPS310, MS5611 | 🧪 |
+| `mcu-encoder` | Rotary encoders: AS5047P, AS5600, AMT102-V | 🧪 |
+| `mcu-encoder` + AS5048A | AS5048A chip for mcu-encoder | 🧭 |
+| `mcu-powermon` | Power monitors: INA219, INA226, INA228, INA237 | 🧪 |
+| `mcu-battery` | Fuel gauge and pack monitor: MAX17048, BQ76920/30/40; in review | 🚧 |
+| `mcu-stepper` | Stepper drivers: TMC2209 (UART), TMC5240 (SPI) | 🧪 |
+| `mcu-esc` | Motor drivers: DJI C610, C620, GM6020, C615; Haitai HT-03 | 🧪 |
+| `mcu-esc` + DShot | DShot ESC protocol for mcu-esc, in progress | 🚧 |
+| `mcu-servo` | Hobby servos on the MCU's PWM or a PCA9685 | 🧪 |
+| `mcu-loadcell` | Load cell ADCs: HX711, NAU7802 | 🧪 |
+| `mcu-tof` | Distance: VL53L1X, TF-Luna | 🧪 |
+| `mcu-tof` + TFmini | TFmini rangefinder for mcu-tof | 🧭 |
+| `mcu-lidar` | 2D lidar: LDROBOT LD19, LD06 | 🧪 |
+| `mcu-uwb` | UWB ranging: DW1000 | 🧪 |
+| `mcu-can` | CAN controllers: MCP2515, ESP32 TWAI, STM32 bxCAN | 🧪 |
+| `mcu-can` + FDCAN | STM32 FDCAN controller for mcu-can, in progress | 🚧 |
+| `mcu-rc` | RC receivers: CRSF/ELRS, SBUS, DJI DR16 | 🧪 |
+| `mcu-gamecontroller` | Gamepads: DualShock 4, DualSense, Xbox over BLE (unverified); parsers only on STM32 | 🧪 |
+| `mcu-expander` | GPIO expanders: MCP23017, MCP23S17 | 🧪 |
+
+</details>
+
+<details>
 <summary>⚡ ESP32 / ESP-IDF</summary>
 
 | Project | Use it for | Status |
 |---|---|---|
 | `esp-c620-control` | C620 motor control | 🧪 |
-| `esp-HT03` | HT-03 actuators, MIT protocol over CAN | 🚧 |
-| `esp-tmc5240-stepper` | TMC5240 stepper driver | 🧪 |
-| `esp-tmc2209-stepper` | TMC2209 stepper, UART | 🚧 |
 | `esp-drv8323-gatedriver` | DRV8323 BLDC gate driver | 🚧 |
-| `esp-pca9685-pwm` | PCA9685 16-ch PWM | 🧪 |
-| `esp-servo-pwm` | RC servos on LEDC, no extra chip | 🚧 |
-| `esp-imu` | IMU subsystem: MPU-6050, ICM-45686, BMI088 | 🧪 |
-| `esp-imu` + BNO085 | BNO085 chip for esp-imu | 🧭 |
-| `esp-imu` + ICM-42688 | ICM-42688 chip for esp-imu | 🧭 |
-| `esp-compass` | Magnetometer subsystem: QMC5883L, QMC5883P | 🧪 |
-| `esp-compass` + MMC5983MA | MMC5983MA chip for esp-compass | 🧭 |
-| `esp-ld19-lidar` | LD19/LD06 LiDAR, UART | 🚧 |
-| `esp-tfmini-lidar` | TFmini LiDAR interface | 🧭 |
-| `esp-vl53l1x-tof` | VL53L1X ToF sensor | 🚧 |
-| `esp-ublox-gnss` | u-blox M8/M10 GNSS | 🧭 |
-| `esp-encoder` | Encoder subsystem: AS5600, AS5047P, AMT102-V | 🚧 |
-| `esp-encoder` + AS5048A | AS5048A chip for esp-encoder | 🧭 |
-| `esp-baro` | Barometer subsystem: BMP280, BMP388, DPS310, MS5611 | 🧪 |
-| `esp-hx711-loadcell` | HX711 load cell amplifier | 🧪 |
-| `esp-nau7802-loadcell` | NAU7802 bridge ADC, I2C | 🧪 |
-| `esp-ina2xx-sensor` | INA2xx power monitor | 🧪 |
+| [esp-sn65hvd230-can](https://github.com/JonasAtelier/esp-sn65hvd230-can) | ESP32 CAN bus interface | 🧪 |
 | `esp-max17048-fuelgauge` | MAX17048 1S fuel gauge | 🧪 |
 | `esp-bq769x0-bms` | bq769x0 3-15S pack monitor | 🧪 |
-| `esp-ps-controller` | PS4/PS5 controller input | 🧪 |
-| `esp-crsf-rc` | CRSF/ELRS RC receiver, UART | 🧪 |
-| `esp-mcp23-expander` | MCP23017 I/O expander | 🚧 |
 | `esp-ads1115-adc` | ADS1115 4-ch 16-bit ADC | 🧪 |
 | `esp-tca9548a-mux` | TCA9548A I2C multiplexer | 🧭 |
+| `esp-ublox-gnss` | u-blox M8/M10 GNSS | 🧭 |
 | `esp-ssd1306-oled` | SSD1306 OLED display, I2C | 🧪 |
 | `esp-ws2812-led` | WS2812 RGB LEDs, RMT | 🚧 |
-| [esp-sn65hvd230-can](https://github.com/JonasAtelier/esp-sn65hvd230-can) | ESP32 CAN bus interface | 🧪 |
-| `esp-mcp2515-can` | MCP2515 CAN over SPI | 🧪 |
-| `esp-dw1000-uwb` | DW1000 UWB ranging | 🧪 |
 | `esp-espnow-link` | ESP-NOW packets between boards | 🚧 |
 | `esp-ota-wifi` | On-demand Wi-Fi OTA update | 🧪 |
 | `esp-sdlog` | Buffered SD-card logger | 🚧 |
-
-</details>
-
-<details>
-<summary>🔩 STM32 / HAL</summary>
-
-| Project | Use it for | Status |
-|---|---|---|
-| `stm-imu` | IMU subsystem: MPU-6050, ICM-45686, BMI088 | 🚧 |
-| `stm-baro` | Barometer subsystem: BMP280, BMP388, DPS310, MS5611 | 🚧 |
-| `stm-compass` | Magnetometer subsystem: QMC5883L, QMC5883P | 🚧 |
-| `stm-ina2xx-sensor` | INA2xx power monitor | 🚧 |
 
 </details>
 
@@ -129,7 +125,8 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 
 | Project | Use it for | Status |
 |---|---|---|
-| `Hawk` | Drone | 🧭 |
+| `hawk` | Hawk drone: STM32F405 flight firmware for the Hawk flight controller, stm-forge app | 🚧 |
+| `nexus_p` | STM32G030 monitor on Hawk's power board, stm-forge app | 🚧 |
 | `Hawk_control` | ROS 2 drone control, PS4-driven | 🚧 |
 | `Dingo` | Robotic dog | 🧭 |
 | `dingo_s3` | ESP32-S3 Dingo firmware; not verified on robot hardware | 🚧 |
@@ -147,8 +144,8 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 
 | Project | Use it for | Status |
 |---|---|---|
-| `esp-forge` | Fetch an ESP-IDF app and selected libraries, then build firmware | 🚧 |
-| `stm-forge` | Fetch an STM32 app and selected libraries, then build firmware | 🚧 |
+| `esp-forge` | Fetch an ESP-IDF app and libraries pinned @stable, then build firmware; `make toolchain` installs the pinned ESP-IDF v5.5.5 | 🚧 |
+| `stm-forge` | Fetch an STM32 app, the HAL and libraries pinned @stable, then build firmware; `make toolchain` installs the pinned ARM GNU Toolchain 14.2.rel1 | 🚧 |
 | `rmboard_f427` | RoboMaster Board A bring-up app for stm-forge | 🚧 |
 
 </details>
