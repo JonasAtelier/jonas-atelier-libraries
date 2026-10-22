@@ -69,8 +69,6 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | `esp-c620-control` | C620 motor control | 🧪 |
 | `esp-drv8323-gatedriver` | DRV8323 BLDC gate driver | 🚧 |
 | [esp-sn65hvd230-can](https://github.com/JonasAtelier/esp-sn65hvd230-can) | ESP32 CAN bus interface | 🧪 |
-| `esp-max17048-fuelgauge` | MAX17048 1S fuel gauge | 🧪 |
-| `esp-bq769x0-bms` | bq769x0 3-15S pack monitor | 🧪 |
 | `esp-ads1115-adc` | ADS1115 4-ch 16-bit ADC | 🧪 |
 | `esp-tca9548a-mux` | TCA9548A I2C multiplexer | 🧭 |
 | `esp-ublox-gnss` | u-blox M8/M10 GNSS | 🧭 |
