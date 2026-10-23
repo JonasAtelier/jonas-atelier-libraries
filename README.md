@@ -86,24 +86,13 @@ Expand a category to explore. **✅ Available · 🧪 Validation pending · 🚧
 | Project | Use it for | Status |
 |---|---|---|
 | [upid](https://github.com/JonasAtelier/upid) | Portable PID control | ✅ |
-| `adrc` | Active disturbance rejection | 🚧 |
-| `lqr` | Discrete-time LQR gains | 🚧 |
-| `bt` | Behaviour trees | 🚧 |
-| `fsm` | Finite state machines | 🧪 |
-| `kin` | Forward/inverse kinematics | 🧪 |
-| `mob` | Wheel kinematics & odometry | 🚧 |
-| `dyn` | Arm dynamics, gravity comp | 🚧 |
-| `path` | Spline path & pure pursuit | 🚧 |
-| `imp` | Impedance & admittance control | 🧪 |
-| `foc` | Field-oriented control maths | 🧪 |
-| `traj` | Trapezoidal & S-curve profiles | 🧭 |
-| `f_kalman` | Scalar Kalman filter | 🧪 |
-| `f_complementary` | Complementary filter | 🧪 |
-| `f_particle` | Particle filter | 🧪 |
-| `f_madgwick` | Madgwick AHRS filter | 🚧 |
-| `f_ekf` | Extended Kalman | 🚧 |
-| `f_rls` | Recursive least sq. | 🚧 |
-| `f_hampel` | Hampel filtering | 🧭 |
+| `algo-filter` | Filters: Kalman, EKF, Madgwick, complementary, particle, RLS | 🚧 |
+| `algo-filter` + Hampel | Hampel outlier filter for algo-filter | 🧭 |
+| `algo-control` | Controllers: ADRC, LQR, impedance/admittance, FOC | 🚧 |
+| `algo-kinematics` | Arm kinematics and dynamics, wheel odometry | 🚧 |
+| `algo-motion` | Spline path and pure pursuit | 🚧 |
+| `algo-motion` + profiles | Trapezoidal and S-curve profiles for algo-motion | 🧭 |
+| `algo-behavior` | Behaviour trees, finite state machines | 🚧 |
 
 </details>
 
