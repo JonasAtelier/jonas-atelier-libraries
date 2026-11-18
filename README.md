@@ -6,11 +6,11 @@ A directory of Jonas Atelier’s robotics libraries. Start with a part number if
 
 ## Library search
 
-**Contents** · [Public libraries](#public-libraries) · [ESP32 and STM32 drivers](#esp32-and-stm32-drivers) · [Portable C libraries](#portable-c-libraries) · [ESP-IDF components](#esp-idf-components) · [Robots and build tools](#robots-and-build-tools) · [Roadmap](#roadmap)
+**Contents** · [Quick starts](#quick-starts) · [ESP32 and STM32 drivers](#esp32-and-stm32-drivers) · [Portable C libraries](#portable-c-libraries) · [ESP-IDF components](#esp-idf-components) · [Robots and build tools](#robots-and-build-tools) · [Roadmap](#roadmap)
 
 Use **Ctrl+F** or **⌘F** on this page to find a chip such as `BMP280`, an algorithm such as `Kalman`, or a bus such as `CAN`. Linked repository names open public source. Plain-text names identify projects on the workshop bench. To search across repositories, [search Jonas Atelier READMEs on GitHub](https://github.com/search?q=user%3AJonasAtelier+in%3Areadme+CAN&type=repositories) and replace `CAN` with your search term.
 
-## Public libraries
+## Quick starts
 
 | Library | What you can build | Try it |
 | --- | --- | --- |
@@ -19,27 +19,27 @@ Use **Ctrl+F** or **⌘F** on this page to find a chip such as `BMP280`, an algo
 
 ## ESP32 and STM32 drivers
 
-Each library groups parts that do the same job. For example, the barometer drivers expose pressure and temperature through a common interface, so an application can change sensors without rewriting how it uses each reading. Platform support varies by chip and peripheral.
+Each library groups parts that do the same job. For example, the barometer drivers expose pressure and temperature through a common interface, so an application can change sensors without rewriting how it uses each reading. Platform support varies by chip and peripheral. Each library has a step-by-step guide in `docs/installation.md` for adding it to an ESP-IDF or STM32 project.
 
 | Library | Task | Parts and interfaces |
 | --- | --- | --- |
-| `mcu-imu` | Measure acceleration and rotation | MPU-6050, ICM-45686, ICM-42688-P, BMI088, BMI270, WT901C-TTL |
-| `mcu-compass` | Measure magnetic field or heading | QMC5883L, QMC5883P, IST8310, LIS3MDL, CMPS14 |
-| `mcu-baro` | Measure air pressure and estimate height changes | BMP280, BMP388, DPS310, MS5611 |
-| `mcu-encoder` | Measure shaft position | AS5047P, AS5600, AMT102-V |
-| `mcu-loadcell` | Read a strain gauge or weighing scale | HX711, NAU7802 |
-| `mcu-tof` | Measure distance to a surface | VL53L1X, TF-Luna |
-| `mcu-lidar` | Read a 2D scan | LDROBOT LD19, LD06 |
-| `mcu-uwb` | Measure distance between radio nodes | DW1000 ultra-wideband |
-| `mcu-powermon` | Monitor voltage and current | INA219, INA226, INA228, INA237 |
-| `mcu-battery` | Estimate cell charge or monitor a battery pack | MAX17048, BQ76920, BQ76930, BQ76940 |
-| `mcu-stepper` | Drive a stepper motor | TMC2209 over UART, TMC5240 over SPI |
-| `mcu-esc` | Command a motor controller | DJI C610, C620, GM6020, C615, Haitai HT-03, DShot |
-| `mcu-servo` | Position a hobby servo | MCU PWM output or PCA9685 |
-| `mcu-can` | Exchange CAN frames | MCP2515, ESP32 TWAI, STM32 bxCAN and FDCAN |
-| `mcu-rc` | Decode a radio-control receiver | CRSF/ELRS, SBUS, DJI DR16 |
-| `mcu-gamecontroller` | Read gamepad input | DualShock 4, DualSense, Xbox. STM32 support covers report parsing. |
-| `mcu-expander` | Add digital input and output pins | MCP23017 over I²C, MCP23S17 over SPI |
+| [mcu-imu](https://github.com/JonasAtelier/mcu-imu) | Measure acceleration and rotation | MPU-6050, ICM-45686, ICM-42688-P, BMI088, BMI270, LIS2DH12, WT901C-TTL, JY901 |
+| [mcu-compass](https://github.com/JonasAtelier/mcu-compass) | Measure magnetic field or heading | QMC5883L, QMC5883P, IST8310, LIS3MDL, CMPS14 |
+| [mcu-baro](https://github.com/JonasAtelier/mcu-baro) | Measure air pressure and estimate height changes | BMP280, BMP388, DPS310, MS5611 |
+| [mcu-encoder](https://github.com/JonasAtelier/mcu-encoder) | Measure shaft position | AS5047P, AS5600, AMT102-V |
+| [mcu-loadcell](https://github.com/JonasAtelier/mcu-loadcell) | Read a strain gauge or weighing scale | HX711, NAU7802 |
+| [mcu-tof](https://github.com/JonasAtelier/mcu-tof) | Measure distance to a surface | VL53L1X, TF-Luna |
+| [mcu-lidar](https://github.com/JonasAtelier/mcu-lidar) | Read a 2D scan | LDROBOT LD19, LD06 |
+| [mcu-uwb](https://github.com/JonasAtelier/mcu-uwb) | Measure distance between radio nodes | DW1000 ultra-wideband |
+| [mcu-powermon](https://github.com/JonasAtelier/mcu-powermon) | Monitor voltage and current | INA219, INA226, INA228, INA237 |
+| [mcu-battery](https://github.com/JonasAtelier/mcu-battery) | Estimate cell charge or monitor a battery pack | MAX17048, BQ76920, BQ76930, BQ76940 |
+| [mcu-stepper](https://github.com/JonasAtelier/mcu-stepper) | Drive a stepper motor | TMC2209 over UART, TMC5240 over SPI |
+| [mcu-esc](https://github.com/JonasAtelier/mcu-esc) | Command a motor controller | DJI C610, C620, GM6020, C615, Haitai HT-03, DShot |
+| [mcu-servo](https://github.com/JonasAtelier/mcu-servo) | Position a hobby servo | MCU PWM output or PCA9685 |
+| [mcu-can](https://github.com/JonasAtelier/mcu-can) | Exchange CAN frames | MCP2515, ESP32 TWAI, STM32 bxCAN and FDCAN |
+| [mcu-rc](https://github.com/JonasAtelier/mcu-rc) | Decode a radio-control receiver | CRSF/ELRS, SBUS, DJI DR16 |
+| [mcu-gamecontroller](https://github.com/JonasAtelier/mcu-gamecontroller) | Read gamepad input | DualShock 4, DualSense, Xbox. STM32 support covers report parsing. |
+| [mcu-expander](https://github.com/JonasAtelier/mcu-expander) | Add digital input and output pins | MCP23017 over I²C, MCP23S17 over SPI |
 
 ## Portable C libraries
 
@@ -57,11 +57,11 @@ flowchart LR
 | Library | Choose it when you need to… |
 | --- | --- |
 | [UPID](https://github.com/JonasAtelier/upid) | Bring a measured value toward a target with proportional, integral, and derivative control. |
-| `algo-filter` | Estimate a value from noisy readings. Includes Kalman, extended Kalman, complementary, Madgwick, particle, and recursive least-squares algorithms. |
-| `algo-control` | Control a changing load, balance a system, or regulate motor current. Includes ADRC, LQR, impedance control, and field-oriented control. |
-| `algo-kinematics` | Calculate arm position and joint torque, or estimate a wheeled robot’s motion. |
-| `algo-motion` | Turn waypoints into a smooth path and track it with pure pursuit. |
-| `algo-behavior` | Choose a robot’s next action using a state machine or behavior tree. |
+| [algo-filter](https://github.com/JonasAtelier/algo-filter) | Estimate a value from noisy readings. Includes Kalman, extended Kalman, complementary, Madgwick, particle, and recursive least-squares algorithms. |
+| [algo-control](https://github.com/JonasAtelier/algo-control) | Control a changing load, balance a system, or regulate motor current. Includes ADRC, LQR, impedance control, and field-oriented control. |
+| [algo-kinematics](https://github.com/JonasAtelier/algo-kinematics) | Calculate arm position and joint torque, or estimate a wheeled robot’s motion. |
+| [algo-motion](https://github.com/JonasAtelier/algo-motion) | Turn waypoints into a smooth path and track it with pure pursuit. |
+| [algo-behavior](https://github.com/JonasAtelier/algo-behavior) | Choose a robot’s next action using a state machine or behavior tree. |
 
 ## ESP-IDF components
 
@@ -92,6 +92,7 @@ flowchart LR
 | Area | Planned work |
 | --- | --- |
 | Sensors and peripherals | BNO085 orientation, MMC5983MA compass, AS5048A encoders, TFmini ranging, TCA9548A I²C multiplexing, and u-blox GNSS |
+| Platforms | Arduino support for the ESP32 and STM32 driver libraries |
 | Algorithms | Hampel outlier filtering and trapezoidal and S-curve motion profiles |
 | Robot projects | Arachne spider robot, Navis ground vehicle, Helios humanoid, and Jarvis robotic arm |
 
