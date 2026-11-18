@@ -43,6 +43,17 @@ Each library groups parts that do the same job. For example, the barometer drive
 
 ## Portable C libraries
 
+A wheel-speed controller is one way to combine these libraries. An encoder measures motion, UPID calculates a correction, and the motor controller applies it. The next measurement closes the loop.
+
+```mermaid
+flowchart LR
+    wheel["Wheel speed"] --> sensor["mcu-encoder<br/>Read shaft position"]
+    sensor --> speed["Application<br/>Estimate speed"]
+    speed --> pid["UPID<br/>Compare with target"]
+    pid --> drive["Motor controller<br/>Apply output"]
+    drive --> wheel
+```
+
 | Library | Choose it when you need to… |
 | --- | --- |
 | [UPID](https://github.com/JonasAtelier/upid) | Bring a measured value toward a target with proportional, integral, and derivative control. |
